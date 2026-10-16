@@ -25,6 +25,15 @@ collections:
               - {label: Photo, name: image, widget: image}
               - {label: "Photo description (for screen readers)", name: alt, widget: string}
               - {label: Caption, name: caption, widget: string}
+          - {label: "Cooking classes heading", name: classes_heading, widget: string}
+          - label: "Cooking classes"
+            name: classes
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text}
+              - {label: "Link URL", name: link_url, widget: string}
+              - {label: "Link text", name: link_text, widget: string}
           - {label: "Bear photo", name: bear_image, widget: image}
           - {label: "Bear photo description", name: bear_alt, widget: string}
           - {label: "Bear caption", name: bear_caption, widget: string}
