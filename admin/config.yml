@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: foodlabcooks/foodlab-site
+  branch: main
+media_folder: img
+public_folder: /img
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: home
+        label: Home page
+        file: content/home.json
+        fields:
+          - {label: "Big title", name: hero_title, widget: string}
+          - {label: "Tagline under title", name: tagline, widget: string}
+          - {label: "Intro heading", name: intro_heading, widget: string}
+          - {label: "Intro text", name: intro_text, widget: text}
+          - label: "Photo gallery"
+            name: gallery
+            widget: list
+            fields:
+              - {label: Photo, name: image, widget: image}
+              - {label: "Photo description (for screen readers)", name: alt, widget: string}
+              - {label: Caption, name: caption, widget: string}
+          - {label: "Bear photo", name: bear_image, widget: image}
+          - {label: "Bear photo description", name: bear_alt, widget: string}
+          - {label: "Bear caption", name: bear_caption, widget: string}
+          - {label: "Contact email", name: contact_email, widget: string}
