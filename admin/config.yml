@@ -34,7 +34,4 @@ collections:
               - {label: Description, name: description, widget: text}
               - {label: "Link URL", name: link_url, widget: string}
               - {label: "Link text", name: link_text, widget: string}
-          - {label: "Bear photo", name: bear_image, widget: image}
-          - {label: "Bear photo description", name: bear_alt, widget: string}
-          - {label: "Bear caption", name: bear_caption, widget: string}
           - {label: "Contact email", name: contact_email, widget: string}
