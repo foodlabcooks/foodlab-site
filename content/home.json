@@ -1,7 +1,7 @@
 {"hero_title":"Food Lab","tagline":"a youth and adult cooking space at the Jefferson County Fairgrounds","intro_heading":"Good food, made together","intro_text":"Cooking classes, shared tables, and a kitchen open to our community.",
 "gallery":[{"image":"/img/4.jpg","alt":"Fresh vegetables and eggs on a cutting board","caption":"Cooking classes"},{"image":"/img/3.jpg","alt":"Colorful vegetable bowl","caption":"Seasonal & colorful"},{"image":"/img/2.jpg","alt":"Plated dishes on a wooden table","caption":"Shared at the table"}],
 "classes_heading":"Cooking classes",
-"classes":[{"title":"Youth Cooking Classes","description":"[description to be added]","link_url":"#","link_text":"[link to be added]"},{"title":"Cooking Demos","description":"[description to be added]","link_url":"#","link_text":"[link to be added]"}],
+"classes":[{"title":"Youth Cooking Classes","description":"Youth 11 to 17 will join Aaron and Stacey in learning kitchen skills, food safety, and how to prepare delicious local meals.","link_url":"#","link_text":"[link to be added]"},{"title":"Cooking Demos","description":"[description to be added]","link_url":"#","link_text":"[link to be added]"}],
 "classes_tickets_note":"See all current class offerings and get tickets here.",
 "classes_tickets_url":"https://buytickets.at/foodlab",
 "classes_tickets_text":"Buy tickets",
