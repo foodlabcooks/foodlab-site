@@ -34,4 +34,7 @@ collections:
               - {label: Description, name: description, widget: text}
               - {label: "Link URL", name: link_url, widget: string}
               - {label: "Link text", name: link_text, widget: string}
+          - {label: "Tickets note", name: classes_tickets_note, widget: string}
+          - {label: "Tickets URL", name: classes_tickets_url, widget: string}
+          - {label: "Tickets link text", name: classes_tickets_text, widget: string}
           - {label: "Contact email", name: contact_email, widget: string}

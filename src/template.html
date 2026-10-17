@@ -7,9 +7,11 @@
   <section class="intro"><h2>{{intro_heading}}</h2><p>{{intro_text}}</p></section>
   <section class="gallery">{{gallery}}
   </section>
-  <section class="classes"><h2>{{classes_heading}}</h2>{{classes}}
+  <section class="classes"><h2>{{classes_heading}}</h2>
+    <div class="classes-tickets"><p>{{classes_tickets_note}}</p><a class="tickets" href="{{classes_tickets_url}}">{{classes_tickets_text}}</a></div>
+    {{classes}}
   </section>
   <!-- Add more sections here when ready -->
 </main>
-<footer><p>Food Lab &middot; Port Townsend, WA</p><p><a class="contact" href="mailto:{{contact_email}}">Contact: {{contact_email}}</a></p><p class="credit">Photos from Unsplash &middot; Dancing bears by tlianza (CC BY)</p></footer>
+<footer><p>Food Lab &middot; Port Townsend, WA</p><p><a class="contact" href="mailto:{{contact_email}}">Contact: {{contact_email}}</a></p><p class="credit">Photos from Unsplash</p></footer>
 </body></html>
