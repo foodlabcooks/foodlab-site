@@ -7,9 +7,12 @@ const gallery=(c.gallery||[]).map(g=>`\n    <figure><img src="${img(g.image)}" a
 const action=item=>String(item.link_url||'').trim()?`<a href="${esc(item.link_url)}">${esc(item.link_text)}</a>`:esc(item.link_text);
 const card=item=>`<div class="class-card"><h3>${esc(item.title)}</h3><p>${esc(item.description)}</p>${action(item)}</div>`;
 const tickets=`<div class="classes-tickets"><p>${esc(c.classes_tickets_note)}</p><a class="tickets" href="${esc(c.classes_tickets_url)}">${esc(c.classes_tickets_text)}</a></div>`;
-const classes='\n    <ul class="class-list">'+ (c.classes||[]).map(item=>item.title==='Youth Cooking Classes'
-  ? `\n      <li class="class-group">${card(item)}${tickets}</li>`
-  : `\n      <li class="class-card"><h3>${esc(item.title)}</h3><p>${esc(item.description)}</p>${action(item)}</li>`).join('') +'\n    </ul>';
+const below=item=>{const url=String(item.tickets_url||'').trim();return url?`<div class="classes-tickets"><a class="tickets" href="${esc(url)}">${esc(item.tickets_text||'Buy tickets')}</a></div>`:'';};
+const classes='\n    <ul class="class-list">'+ (c.classes||[]).map(item=>{
+  if(item.title==='Youth Cooking Classes') return `\n      <li class="class-group">${card(item)}${tickets}</li>`;
+  const btn=below(item);
+  return btn?`\n      <li class="class-group">${card(item)}${btn}</li>`:`\n      <li class="class-card"><h3>${esc(item.title)}</h3><p>${esc(item.description)}</p>${action(item)}</li>`;
+}).join('') +'\n    </ul>';
 let t=fs.readFileSync('src/template.html','utf8');
 const v={...c,bear_image:img(c.bear_image)};
 t=t.replace('{{gallery}}',gallery).replace('{{classes}}',classes).replace(/\{\{(\w+)\}\}/g,(m,k)=>k==='bear_image'?v[k]:esc(v[k]));
