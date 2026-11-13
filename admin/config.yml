@@ -34,9 +34,7 @@ collections:
               - {label: Description, name: description, widget: text}
               - {label: "Link URL", name: link_url, widget: string}
               - {label: "Link text", name: link_text, widget: string}
-              - {label: "Tickets button URL", name: tickets_url, widget: string, required: false}
-              - {label: "Tickets button text", name: tickets_text, widget: string, required: false}
-          - {label: "Tickets note", name: classes_tickets_note, widget: string}
-          - {label: "Tickets URL", name: classes_tickets_url, widget: string}
-          - {label: "Tickets link text", name: classes_tickets_text, widget: string}
+          - {label: "Tickets note", name: classes_tickets_note, widget: string, hint: "Shown above the Buy tickets button at the end of Cooking classes."}
+          - {label: "Tickets URL", name: classes_tickets_url, widget: string, hint: "Used by the Buy tickets button under the intro and the one at the end of Cooking classes."}
+          - {label: "Tickets link text", name: classes_tickets_text, widget: string, hint: "Label for both Buy tickets buttons."}
           - {label: "Contact email", name: contact_email, widget: string}
