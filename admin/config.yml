@@ -37,4 +37,11 @@ collections:
           - {label: "Tickets note", name: classes_tickets_note, widget: string, hint: "Shown above the Buy tickets button at the end of Cooking classes."}
           - {label: "Tickets URL", name: classes_tickets_url, widget: string, hint: "Used by the Buy tickets button under the intro and the one at the end of Cooking classes."}
           - {label: "Tickets link text", name: classes_tickets_text, widget: string, hint: "Label for both Buy tickets buttons."}
+          - {label: "About heading", name: about_heading, widget: string}
+          - label: "About Us"
+            name: about
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Bio, name: bio, widget: text}
           - {label: "Contact email", name: contact_email, widget: string}
